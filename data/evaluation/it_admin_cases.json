@@ -1,0 +1,51 @@
+[
+  {
+    "case_id": "CON-001",
+    "question": "合同草案形成前，承办部门需要核查合同相对方哪些能力和信息？",
+    "expected_source": "鲲坤科技-合同管理制度-2025版.pdf",
+    "expected_keywords": ["主体资格", "资信状况", "履行能力"],
+    "notes": "验证合同草拟前的调查要求。"
+  },
+  {
+    "case_id": "CON-002",
+    "question": "合同正式对外签署前，需要经过哪些审核和批准要求？",
+    "expected_source": "鲲坤科技-合同管理制度-2025版.pdf",
+    "expected_keywords": ["审核、批准程序", "财务部门", "合同管理部门"],
+    "notes": "验证合同审核与审批职责。"
+  },
+  {
+    "case_id": "CON-003",
+    "question": "合同对方不履行或不完全履行时，承办人应当怎么处理？",
+    "expected_source": "鲲坤科技-合同管理制度-2025版.pdf",
+    "expected_keywords": ["立即通知承办人", "法律顾问", "书面方式"],
+    "notes": "验证合同履约异常的处理路径。"
+  },
+  {
+    "case_id": "SUP-001",
+    "question": "驳船供应商申请进入供应商库，最低注册资金和核心资质要求是什么？",
+    "expected_source": "鲲坤科技-供应商管理制度-2025版.pdf",
+    "expected_keywords": ["200万元", "水路运输许可证", "船舶险"],
+    "notes": "验证供应商准入基础条件。"
+  },
+  {
+    "case_id": "SUP-002",
+    "question": "新增驳船供应商时，申请流程需要说明哪些内容并同步提交什么材料？",
+    "expected_source": "鲲坤科技-供应商管理制度-2025版.pdf",
+    "expected_keywords": ["采购需求、预算", "营业执照副本", "水路运输许可证"],
+    "notes": "验证新增供应商的申请与材料。"
+  },
+  {
+    "case_id": "SUP-003",
+    "question": "驳船供应商的绩效等级如何划分，不合格供应商是什么等级？",
+    "expected_source": "鲲坤科技-供应商管理制度-2025版.pdf",
+    "expected_keywords": ["A级", "B级", "D级"],
+    "notes": "验证供应商分级考评。"
+  },
+  {
+    "case_id": "SUP-004",
+    "question": "如何申请办公室咖啡机维修？",
+    "expected_keywords": [],
+    "should_refuse": true,
+    "notes": "知识库无此制度，验证无依据拒答。"
+  }
+]

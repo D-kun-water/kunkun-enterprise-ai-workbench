@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "EMP-001",
+    "question": "新员工报到前，人力资源部和用人部门分别需要准备哪些事项？",
+    "expected_source": "鲲坤科技-员工管理制度汇编-2025融合版.pdf",
+    "expected_keywords": ["报到前准备", "账号开通申请", "试用期目标"],
+    "notes": "验证新员工入职办理流程。"
+  },
+  {
+    "case_id": "EMP-002",
+    "question": "员工试用期届满前多久要发起转正申请，谁参与审核？",
+    "expected_source": "鲲坤科技-员工管理制度汇编-2025融合版.pdf",
+    "expected_keywords": ["届满前10个工作日", "部门负责人", "人力资源部"],
+    "notes": "验证试用期跟进与转正流程。"
+  },
+  {
+    "case_id": "EMP-003",
+    "question": "事假应提前多久申请，年度累计原则上最多多少个工作日？",
+    "expected_source": "鲲坤科技-员工管理制度汇编-2025融合版.pdf",
+    "expected_keywords": ["提前1个工作日", "10个工作日", "销假"],
+    "notes": "验证事假的申请、额度和销假要求。"
+  },
+  {
+    "case_id": "EMP-004",
+    "question": "未婚员工探望父母可以休几天探亲假，需要提前多久申请？",
+    "expected_source": "鲲坤科技-员工管理制度汇编-2025融合版.pdf",
+    "expected_keywords": ["未婚员工探望父母", "每年5个工作日", "提前10个工作日"],
+    "notes": "验证探亲假资格、天数和申请时限。"
+  },
+  {
+    "case_id": "EMP-005",
+    "question": "婚假基础标准是多少，领取结婚证后多久内应当休完？",
+    "expected_source": "鲲坤科技-员工管理制度汇编-2025融合版.pdf",
+    "expected_keywords": ["3个工作日", "6个月内", "结婚证"],
+    "notes": "验证婚假基础标准和办理材料。"
+  },
+  {
+    "case_id": "EMP-006",
+    "question": "员工级在上海出差住宿每天最高报销多少，报销应在什么时候提交？",
+    "expected_source": "鲲坤科技-员工管理制度汇编-2025融合版.pdf",
+    "expected_keywords": ["一线城市", "450元", "10个工作日内"],
+    "notes": "验证差旅住宿标准与报销时限。"
+  },
+  {
+    "case_id": "EMP-007",
+    "question": "公司晋升评审主要看什么，调薪结果如何生效？",
+    "expected_source": "鲲坤科技-员工管理制度汇编-2025融合版.pdf",
+    "expected_keywords": ["晋升与调薪评审", "绩效结果", "薪资沟通函"],
+    "notes": "验证晋升调薪流程和书面确认要求。"
+  },
+  {
+    "case_id": "EMP-008",
+    "question": "公司是否提供宠物医疗报销？",
+    "expected_keywords": [],
+    "should_refuse": true,
+    "notes": "知识库无此制度，验证无依据拒答。"
+  }
+]

@@ -1,0 +1,42 @@
+name: kunkun-workbench
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+      args:
+        INSTALL_FAISS: ${INSTALL_FAISS:-false}
+        INSTALL_RERANKER: ${ENABLE_RERANKER:-false}
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      EMBEDDING_PROVIDER: ${EMBEDDING_PROVIDER:-local}
+      LLM_PROVIDER: ${LLM_PROVIDER:-ollama}
+      LLM_MODEL: ${LLM_MODEL:-qwen3.5:9b}
+      OLLAMA_BASE_URL: ${DOCKER_OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-nomic-embed-text}
+      DEEPSEEK_BASE_URL: ${DEEPSEEK_BASE_URL:-https://api.deepseek.com}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      DEEPSEEK_MODEL: ${DEEPSEEK_MODEL:-deepseek-chat}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-https://api.openai.com/v1}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-5}
+      ENABLE_RERANKER: ${ENABLE_RERANKER:-false}
+      RERANKER_MODEL: ${RERANKER_MODEL:-BAAI/bge-reranker-base}
+    volumes:
+      - ./data:/app/data
+      - ./storage:/app/storage
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "127.0.0.1:8501:8501"
+    environment:
+      KNOWLEDGE_API_URL: http://backend:8000
+    depends_on:
+      - backend

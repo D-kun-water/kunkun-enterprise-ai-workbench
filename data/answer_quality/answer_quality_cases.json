@@ -1,0 +1,10 @@
+[
+  {"case_id":"AQ-001","question":"事假怎么申请？","with_adaptation":{"expected":"answer","keywords":["提前1个工作日"]},"without_adaptation":{"expected":"answer","keywords":["提前1个工作日"]},"notes":"验证事假申请时限。"},
+  {"case_id":"AQ-002","question":"未婚员工探望父母探亲假怎么申请？","with_adaptation":{"expected":"answer","keywords":["每年5个工作日"]},"without_adaptation":{"expected":"answer","keywords":["每年5个工作日"]},"notes":"验证探亲假天数与申请时限。"},
+  {"case_id":"AQ-003","question":"婚假原则上多久休完？","with_adaptation":{"expected":"answer","keywords":["6个月内"]},"without_adaptation":{"expected":"answer","keywords":["6个月内"]},"notes":"验证婚假使用期限。"},
+  {"case_id":"AQ-004","question":"晋升和调薪怎么评审？","with_adaptation":{"expected":"answer","keywords":["晋升与调薪评审"]},"without_adaptation":{"expected":"answer","keywords":["晋升与调薪评审"]},"notes":"验证晋升调薪评审流程。"},
+  {"case_id":"AQ-005","question":"合同正式签署前需要经过什么审批？","with_adaptation":{"expected":"answer","keywords":["审核、批准程序"]},"without_adaptation":{"expected":"answer","keywords":["审核、批准程序"]},"notes":"验证合同审核批准要求。"},
+  {"case_id":"AQ-006","question":"新增驳船供应商需要提交哪些材料？","with_adaptation":{"expected":"answer","keywords":["采购需求、预算","营业执照副本","水路运输许可证","船舶配置与服务航线","船舶保单"]},"without_adaptation":{"expected":"answer","keywords":[],"may_vary":true},"notes":"验证新增供应商申请说明和完整准入材料，不只验证命中供应商库。"},
+  {"case_id":"AQ-007","question":"公司是否提供宠物医疗报销？","with_adaptation":{"expected":"refusal"},"without_adaptation":{"expected":"refusal"},"notes":"知识库无此制度，验证无依据拒答。"},
+  {"case_id":"AQ-008","question":"坐高铁二等座的报销流程是什么？","with_adaptation":{"expected":"answer","keywords":["高铁按制度对应动车组","动车组二等座","公司指定渠道"]},"without_adaptation":{"expected":"answer","keywords":[],"may_vary":true},"notes":"验证口语中的高铁能映射到制度条款中的动车组，并只返回交通等级与订票渠道，不混入住宿或通讯补贴。"}
+]

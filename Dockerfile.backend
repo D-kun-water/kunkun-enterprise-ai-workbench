@@ -1,0 +1,19 @@
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+WORKDIR /app
+COPY requirements.txt .
+ARG INSTALL_FAISS=false
+ARG INSTALL_RERANKER=false
+RUN pip install --no-cache-dir -r requirements.txt \
+    && if [ "$INSTALL_FAISS" = "true" ]; then pip install --no-cache-dir "faiss-cpu>=1.8,<2.0"; fi \
+    && if [ "$INSTALL_RERANKER" = "true" ]; then pip install --no-cache-dir "sentence-transformers>=3.0,<6.0"; fi
+
+COPY app ./app
+COPY data ./data
+COPY storage ./storage
+
+EXPOSE 8000
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
