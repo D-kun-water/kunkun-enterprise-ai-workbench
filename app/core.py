@@ -50,7 +50,7 @@ class Settings(BaseSettings):
     answer_top_k: int = 5
     rrf_k: int = 60
 
-    embedding_provider: str = "local"
+    embedding_provider: str = "ollama"
     embedding_model: str = "nomic-embed-text"
     llm_provider: str = "ollama"
     llm_model: str = "qwen3.5:9b"
