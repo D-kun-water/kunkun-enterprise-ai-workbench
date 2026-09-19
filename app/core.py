@@ -51,13 +51,13 @@ class Settings(BaseSettings):
     rrf_k: int = 60
 
     embedding_provider: str = "ollama"
-    embedding_model: str = "nomic-embed-text"
-    llm_provider: str = "ollama"
-    llm_model: str = "qwen3.5:9b"
+    embedding_model: str = "quentinz/bge-large-zh-v1.5:latest"
+    llm_provider: str = "deepseek"
+    llm_model: str = "deepseek-r1:8b"
     ollama_base_url: str = "http://127.0.0.1:11434"
     deepseek_base_url: str = "https://api.deepseek.com"
     deepseek_api_key: str = ""
-    deepseek_model: str = "deepseek-chat"
+    deepseek_model: str = "deepseek-flash"
     openai_base_url: str = "https://api.openai.com/v1"
     openai_api_key: str = ""
     openai_model: str = "gpt-5"
