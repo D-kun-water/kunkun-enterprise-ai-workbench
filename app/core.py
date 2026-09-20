@@ -52,7 +52,7 @@ class Settings(BaseSettings):
 
     embedding_provider: str = "ollama"
     embedding_model: str = "quentinz/bge-large-zh-v1.5:latest"
-    llm_provider: str = "deepseek"
+    llm_provider: str = "openai"
     llm_model: str = "deepseek-r1:8b"
     ollama_base_url: str = "http://127.0.0.1:11434"
     deepseek_base_url: str = "https://api.deepseek.com"
@@ -60,7 +60,7 @@ class Settings(BaseSettings):
     deepseek_model: str = "deepseek-flash"
     openai_base_url: str = "https://api.openai.com/v1"
     openai_api_key: str = ""
-    openai_model: str = "gpt-5"
+    openai_model: str = "gpt-5.6-terra"
 
     enable_reranker: bool = False
     reranker_model: str = "BAAI/bge-reranker-base"
